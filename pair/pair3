@@ -1,6 +1,49 @@
-function solution(n) {
-    let word = String(n).split('')
-    let q = word.reverse().map((ele) => Number(ele));
+function solution(num){
+    let i=0
+    while (num!=1){
+        if (num%2 ==0){
+            num = num/2
+        }else{
+            num = (num*3)+1
+        }
+        i++;
+    }
+    return (i>500)?-1:i
+}
 
-    console.log( q)
-}  
+(num!=1&&count<500)
+
+
+
+
+
+
+function solution(n) {
+    var answer = 0;
+    let num = n.toString(3)
+    console.log(num)
+    let list = String(num).split('')
+    let reverselist = list.reverse()
+    let str = reverselist.reduce((a,b)=>a+b)
+
+    console.log(parseInt(strn,3))
+
+    return parseInt(str,3);
+}
+
+function solution(n) {
+    var answer = 0;
+    let num = n.toString(3)
+    let list = String(num).split('')
+    let reverselist = list.reverse()
+    let str = reverselist.reduce((a,b)=>a+b)
+    let strn = parseInt(str)
+    console.log(parseInt(strn,3))
+
+    return parseInt(str,3);
+}
+
+
+
+Number 함수
+21200011221101121 -> 21200011221101120
