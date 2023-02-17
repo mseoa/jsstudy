@@ -1,0 +1,6 @@
+function solution(n) {
+    let word = String(n).split('')
+    let q = word.reverse().map((ele) => Number(ele));
+
+    console.log( q)
+}  
