@@ -30,9 +30,7 @@ function solution(N, arr1){
             }
         }
     }
-
-  
-    let ans = answer.map((elem,idex)=>elem.map((el,idx)=>{
+    let ans = answer.map((elem)=>elem.map((el)=>{
         if(!Array.isArray(el)){
             return el = el} 
         else if (el.length==0) {

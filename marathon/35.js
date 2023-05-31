@@ -9,3 +9,9 @@
 //     let ansArr = sortedArr.map((elem)=>elem.split('').slice(1).join(''))
 //     return ansArr
 // }
+
+//현재 풀이
+function solution(strings, n) {
+    let word = strings.map((elem)=>elem=elem[n]+elem).sort()
+    return word.map((elem)=>elem.substr(1))
+}
